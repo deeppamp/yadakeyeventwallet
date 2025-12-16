@@ -1,0 +1,15 @@
+# Placeholder firmware binaries
+# These files need to be compiled from actual ESP32 firmware source code
+
+This directory should contain:
+- bootloader.bin (ESP32 bootloader)
+- partitions.bin (Partition table)
+- salvium-wallet.bin (Main firmware with CryptoNote implementation)
+
+To create actual firmware, you need to:
+1. Implement CryptoNote crypto operations for ESP32
+2. Add QR code display functionality
+3. Implement secure key storage
+4. Build using PlatformIO or ESP-IDF
+
+See README.md for implementation details.

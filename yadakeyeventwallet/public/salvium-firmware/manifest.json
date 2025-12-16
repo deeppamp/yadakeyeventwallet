@@ -1,0 +1,26 @@
+{
+  "name": "Salvium Hardware Wallet",
+  "version": "0.1.0-alpha",
+  "home_assistant_domain": "esphome",
+  "funding_url": "https://github.com/pdxwebdev/salvium-wallet",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "bootloader.bin",
+          "offset": 4096
+        },
+        {
+          "path": "partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "firmware.bin",
+          "offset": 65536
+        }
+      ]
+    }
+  ]
+}
